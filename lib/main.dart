@@ -3,8 +3,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:cryptonest/home_page.dart';
 import 'package:flutter/services.dart';
+import 'package:cryptonest/models/app_config.dart';
+import 'package:get_it/get_it.dart';
+import 'package:cryptonest/services/http_service.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await loadConfig();
   runApp(const MyApp());
